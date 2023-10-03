@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="bg-blue-500 flex flex-col items-center justify-center h-screen px-2"
+    >
+      <h1 class="text-white font-mono text-4xl">Customer Survey Form</h1>
+      <div class="bg-white flex flex-col p-5 gap-6 w-full md:w-1/2 rounded-lg">
+        <div class="flex gap-6 justify-center flex-col md:flex-row">
+          <div class="flex flex-col md:w-1/2 gap-2">
+            <label for="name" class="text-gray-700 font-bold">Name</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter Name"
+              class="border-2 border-gray-300 p-2 rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col md:w-1/2 gap-2">
+            <label for="email" class="text-gray-700 font-bold">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter email"
+              class="border-2 border-gray-300 p-2 rounded-lg"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <p class="text-gray-900 font-semibold">
+            Is this first time You are using our products & services?
+          </p>
+          <div class="flex gap-3">
+            <span>
+              <input
+                type="radio"
+                name="first-radio"
+                id="radio-yes"
+                value="yes"
+              />
+              <label for="radio-yes">Yes</label>
+            </span>
+
+            <span>
+              <input type="radio" name="first-radio" id="radio-no" value="no" />
+              <label for="radio-no">No</label></span
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <p class="text-gray-900 font-semibold">
+            Would you suggest to your friends ans colleagues?
+          </p>
+          <div class="flex gap-3">
+            <span>
+              <input
+                type="radio"
+                name="second-radio"
+                id="radio-yes-2"
+                value="yes"
+              />
+              <label for="radio-yes-2">Yes</label>
+            </span>
+
+            <span>
+              <input
+                type="radio"
+                name="second-radio"
+                id="radio-no-2"
+                value="no"
+              />
+              <label for="radio-no-2">No</label></span
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <p class="text-gray-900 font-semibold">
+            How satisfied are you with our company overall?
+          </p>
+          <div class="flex gap-3">
+            <span>
+              <input
+                type="radio"
+                name="third-radio"
+                id="radio-satisfied"
+                value="satisfied"
+              />
+              <label for="radio-satisfied">Satisfied</label>
+            </span>
+
+            <span>
+              <input
+                type="radio"
+                name="third-radio"
+                id="radio-undecided"
+                value="undecided"
+              />
+              <label for="radio-undecided">Undecided</label></span
+            >
+
+            <span>
+              <input
+                type="radio"
+                name="third-radio"
+                id="radio-unsatisfied"
+                value="unsatisfied"
+              />
+              <label for="radio-unsatisfied">unsatisfied</label></span
+            >
+          </div>
+        </div>
+
+        <div class="bg-white flex flex-col gap-6">
+          <label for="suggestion">
+            <p class="text-gray-900 font-semibold">
+              Do you have suggestion to improve our service?
+            </p>
+          </label>
+          <textarea
+            class="border-2 border-gray-300 p-2 h-100 rounded-lg resize-none"
+            name="suggestion"
+            id="suggestion"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+        <button
+          type="button"
+          class="self-start py-1 px-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 active:outline-none focus:outline-none"
+        >
+          Submit
+        </button>
+      </div>
+      <p class="text-white mt-2 px-2">
+        &copy; 2023 Customer Survey Form. All Rights Reserved | Design by
+        <span class="text-blue-900 font-bold">Aashnaa</span>
+      </p>
+    </div>
+  </body>
+</html>
